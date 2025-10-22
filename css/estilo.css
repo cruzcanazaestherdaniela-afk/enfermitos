@@ -1,0 +1,105 @@
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(135deg, #a8c0ff, #3f2b96);
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+  background: #ffffffcc;
+  backdrop-filter: blur(8px);
+  padding: 20px 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  text-align: center;
+  color: #222;
+  font-size: 1.4rem;
+  margin-bottom: 16px;
+}
+
+.g {
+  margin: 10px 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #3f2b96;
+  outline: none;
+  box-shadow: 0 0 5px rgba(63, 43, 150, 0.4);
+}
+
+.acciones {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: #3f2b96;
+  color: white;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #2a1c70;
+}
+
+button.secundario {
+  background: #f0f0f0;
+  color: #3f2b96;
+}
+
+button.secundario:hover {
+  background: #e4e4e4;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  form {
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+}
